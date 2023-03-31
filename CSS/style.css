@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'Microsoft JhengHei', sans-serif;
+}
+
+body {
+    background: #1D212B;
+    position: relative;
+}
+
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1.5px;
+    line-height: 1.4rem;
+}
+
+section:nth-child(odd) {
+    color: #fff;
+}
+
+section:nth-child(even) {
+    color: #1D212B;
+    background: #f6f7f8;
+}
+
+section:nth-child(3) .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 35px;
+}
+
+section:nth-child(3) .cards .text-card {
+    width: 100%;
+}
+
+section:nth-child(4) .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 35px;
+}
+
+section:nth-child(4) .cards .text-card {
+    width: 100%;
+}
+
+section:nth-child(2) .cards .text-card input,
+section:nth-child(4) .cards .text-card input {
+    width: 150px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 50px;
+    background: #1D212B;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+}
+
+
+section:nth-child(4) .cards .text-card a div:hover {
+    opacity: 0.8;
+}
+
+
+
+section .container {
+    margin: 100px;
+}
+
+section h1 {
+    font-size: 60px;
+}
+
+section h2 {
+    font-style: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section .cards {
+    display: flex;
+    justify-content: center;
+}
+
+section .cards .text-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    background: #3590d2;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 10px 12px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 2px 10px 12px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 10px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+.text-card img {
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+section .cards .text-card ul {
+    margin-left: 20px;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: start;
+}
+
+section .cards .text-card h3 {
+    font-style: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* schedule CSS */
+
+.table-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-select:after {
+    content: '<>';
+    font: 17px "Consolas", monospace;
+    color: #2196f3;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 11px;
+    /*Adjust for position however you want*/
+    
+    top: 18px;
+    padding: 0 0 2px;
+    border-bottom: 1px solid #999;
+    /*left line */
+    
+    position: absolute;
+    top: 1.3rem;
+    right: 0.5rem;
+    pointer-events: none;
+}
+
+.custom-select {
+    position: relative;
+}
+    
+.custom-select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Add some styling */
+    
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: 50px;
+    float: right;
+    margin: 5px 0px;
+    padding: 0px 24px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #2196f3;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    -ms-word-break: normal;
+    word-break: normal;
+    transition: all 2s ease-in-out;
+}
+
+.container table {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+    border: 1px solid #cccccc; 
+    border-collapse: collapse;
+    letter-spacing: 0.3px;
+}
+
+.container table th {
+    padding: 10px;
+    background-color: DodgerBlue;
+    line-height: 30px;
+    color: #fff;
+}
+
+.container table td {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #cccccc; 
+    color: #555555;
+    text-align: center; 
+    line-height: 28px;
+    font-size: 0.9vh;
+    background: #f6f7f8;
+}
+
+.first-step, 
+.second-step, 
+.third-step {
+    display: none;
+}
+
+.first-step.active, 
+.second-step.active, 
+.third-step.active {
+    display: table;
+}
+
+
+/* Image modal css */
+#myImg {
+    width: 200px;
+    height: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, 
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+
+@media (max-width: 900px) {
+    section h1 {
+        font-style: 40px;
+    }
+
+    section .cards {
+        flex-direction: column;
+    }
+
+    section:nth-child(3) .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(auto-fit, minmax(500px, 1fr));
+        grid-gap: 35px;
+    }
+
+    section .cards .text-card {
+        width: 100%;
+    }
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
